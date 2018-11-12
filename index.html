@@ -6,22 +6,34 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
   </head>
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Police et rap : une inimitié ?</h1>
+      <p class="lead text-muted">Suivi de l'évolution des références à la police quantitativement et qualitativement.</p>
+    </div>
+</section>
   <body>
     <div class="app container mt-5">
       <div class="row">
-        <div class="col-sm-6">
-          <h5>À l'EDJ, les étudiants travaillent de plus en plus</h5>
-          <p class="text-muted">Commits par mois (source: Pierre Romera).</p>
+        <div class="col-lg-12">
+          <h5>La police dans le rap : une tendance à la diminution des références</h5>
+          <p class="text-muted">Pourcentage de chansons évoquant au moins une fois la police</p>
           <line-chart :height="200" class="mt-3 mb-5"></line-chart>
         </div>
 
-        <div class="col-sm-6">
-          <h5>Afrique du Sud: 10 ans de hausse du braconnage</h5>
-          <p class="text-muted">Rhinoceros tués chaque année par le braconnage en Afrique du Sud (source: South African Government).</p>
+        <div class="col-lg-6">
+          <h5>La BAC est souvent mentionnée par les rappeurs</h5>
+          <p class="text-muted">Pourcentage de mentions du mot "BAC" parmi toutes les références détectées (en majuscule, sinon impossible de la dissocier du bac en tant que baccalauréat)</p>
           <bar-chart :height="200" class="mt-3 mb-5"></bar-chart>
         </div>
 
-        <div class="col-sm-12">
+        <div class="col-lg-6">
+          <h5>Références à la police : comment elles se répartissent ?</h5>
+          <p class="text-muted">Flic, police et keuf sont les 3 mots les plus utilisés. 20% des références à la police utilisent ainsi le terme "flic".</p>
+          <doughnut-chart :height="200" class="mt-3 mb-5"></doughnut-chart>
+        </div>
+<!--         
+        <div class="col-sm-6">
           <h5>Le chômage sous François Hollande</h5>
           <p class="text-muted">Evolution du nombre de chômeurs inscrits à Pôle emploi depuis mai 2012 en France métropolitaine (source: Ministère du Travail).</p>
           <multiline-chart :height="200" class="mt-3 mb-5"></multiline-chart>
@@ -31,13 +43,7 @@
           <h5>Olga, toujours au top</h5>
           <p class="text-muted">Répartition du nombre de commits par étudiante (source: Pierre Romera).</p>
           <pie-chart :height="200" class="mt-3 mb-5"></pie-chart>
-        </div>
-
-        <div class="col-sm-6">
-          <h5>À Paris, la corruption fait rage</h5>
-          <p class="text-muted">Affaires de corruption en Ile-de-France (source: Transparency International)</p>
-          <doughnut-chart :height="200" class="mt-3 mb-5"></doughnut-chart>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -53,5 +59,6 @@
     <script src="charts/pie.js"></script>
     <script src="charts/doughnut.js"></script>
     <script src="index.js"></script>
+    
   </body>
 </html>

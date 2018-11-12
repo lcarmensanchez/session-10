@@ -3,12 +3,12 @@ Vue.component('doughnut-chart', {
   props: ['data', 'options'],
   mounted () {
     var data = this.data || {
-      labels: ["Paris","Hauts-de-Seine","Yvelines","Seine-et-Marne", "Autres"],
+      labels: ["Flic","Keuf","Police","Condé", "BAC", "Autres"],
       datasets: [
         {
           label: 'Affaire de corruption en IDF par département',
-          backgroundColor: ['#54abab', '#9bd1d1', '#9bd1d1', '#9bd1d1', '#9bd1d1'],
-          data: [42 , 18 , 8 , 6 , 13],
+          backgroundColor: ['#393c51', '#666b8c', '#8f95bf', '#a8afe0', '#a7add6', "#54555b"],
+          data: [20 , 19 , 15 , 8, 6, 20],
           datalabels: {
             align: 'center',
             anchor: 'center'
@@ -27,7 +27,7 @@ Vue.component('doughnut-chart', {
 			plugins: {
 				datalabels: {
           display: true,
-					color: '#254444',
+					color: '#e3e6f9',
 					font: {
 						weight: 'bold'
 					},
